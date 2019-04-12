@@ -64,7 +64,7 @@ public class AppConfigurer extends WebSecurityConfigurerAdapter {
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(basePackage(OktaClientController.class.getPackage().getName()))
+                .apis(basePackage(OktaSecureRoutingController.class.getPackage().getName()))
                 .paths(Predicates.not(regex("/error")))
                 .build()
                 .pathMapping("/")

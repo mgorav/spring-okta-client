@@ -14,7 +14,7 @@ import java.util.Collections;
 @RestController
 @RequestMapping("/source")
 @Api("OKTA APIs")
-public class OktaClientController {
+public class OktaSecureRoutingController {
 
     private final RestTemplate restTemplate;
     private final ClientCredentialsResourceDetails credentialsResourceDetails;
@@ -22,7 +22,7 @@ public class OktaClientController {
     @Value("#{ @environment['gonnect.appUrl'] }")
     private String appUrl;
 
-    public OktaClientController(RestTemplate restTemplate, ClientCredentialsResourceDetails credentialsResourceDetails) {
+    public OktaSecureRoutingController(RestTemplate restTemplate, ClientCredentialsResourceDetails credentialsResourceDetails) {
         this.restTemplate = restTemplate;
         this.credentialsResourceDetails = credentialsResourceDetails;
     }
