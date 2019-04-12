@@ -1,0 +1,9 @@
+gonnect:
+  appUrl:
+  oauth2:
+    client:
+      grantType: client_credentials
+      clientId:
+      clientSecret:
+      accessTokenUri:
+      scope: default
